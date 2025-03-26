@@ -1,0 +1,30 @@
+{
+  "ruff.configurationPreference": "filesystemFirst",
+  "files.readonlyInclude": {
+    "**/src/textual/**": true
+  },
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    "**/.git": true,
+    "**/.venv": true
+  },
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.generateWithTypeAnnotation": true,
+  "python.analysis.ignore": [
+    "${workspaceFolder}/src/textual/**",
+    "${workspaceFolder}/.venv/**"
+  ],
+  "python.analysis.importFormat": "relative",
+  "python.analysis.include": [
+    "${workspaceFolder}/src/textual/**"
+  ],
+  "python.analysis.languageServerMode": "full",
+  "python.analysis.logLevel": "Information",
+  "python.analysis.extraPaths": [
+    "{workspaceFolder}/.venv/lib/python3.11/site-packages"
+  ],
+  "python.analysis.typeCheckingMode": "strict",
+  "python.analysis.typeEvaluation.deprecateTypingAliases": true,
+  "python.analysis.typeEvaluation.disableBytesTypePromotions": true
+}
